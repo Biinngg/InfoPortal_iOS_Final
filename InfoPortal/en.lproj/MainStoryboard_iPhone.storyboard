@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2549" systemVersion="12A269" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="jLC-RJ-dMt">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1498"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller - 图书馆-->
+        <scene sceneID="TM3-Cc-cFp">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ygt-aq-nVG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="mnf-gg-EV5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" title="图书馆" id="2Cy-HS-Abh"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9Ti-JH-ENQ">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gqA-e5-4QM" kind="relationship" relationship="rootViewController" id="6X6-QT-CZ1"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="812" y="390"/>
+        </scene>
+        <!--Library View Controller - 图书馆查询-->
+        <scene sceneID="kKW-4j-3o1">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="82Y-ep-jPv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="gqA-e5-4QM" customClass="LibraryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pHs-It-QAj" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="今天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="oWY-kx-1MU">
+                                <rect key="frame" x="52" y="72" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="当前借阅" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="RYp-sd-3If">
+                                <rect key="frame" x="0.0" y="132" width="320" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="8:00～22:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="1x4-5b-Lp7">
+                                <rect key="frame" x="27" y="101" width="93" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="开放时间" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="GAM-EN-PLA">
+                                <rect key="frame" x="0.0" y="44" width="320" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="left" text="" id="qcy-3E-CYf">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="gqA-e5-4QM" id="AkJ-3L-CPs"/>
+                                </connections>
+                            </searchBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="8:00～22:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Ae7-RR-k0x">
+                                <rect key="frame" x="201" y="101" width="93" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="明天" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="hqc-xT-7E4">
+                                <rect key="frame" x="226" y="72" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="backgroundTap:" destination="gqA-e5-4QM" eventType="touchDown" id="EoB-p4-WOl"/>
+                        </connections>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="2" title="图书馆" id="RKd-vs-pe7"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="图书馆查询" id="dtH-QN-cQV">
+                        <barButtonItem key="leftBarButtonItem" title="扫瞄" id="Gby-sJ-NWg">
+                            <connections>
+                                <action selector="Scan:" destination="gqA-e5-4QM" id="aQx-ck-liC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mySearchBar" destination="qcy-3E-CYf" id="KK2-Zp-ujP"/>
+                        <outlet property="myView" destination="pHs-It-QAj" id="IcL-P3-Y75"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1227" y="381"/>
+        </scene>
+        <!--Class View Controller - 无课表-->
+        <scene sceneID="M8z-eP-0LY">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PKj-ul-Q4d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="6xq-F2-TfG" customClass="ClassViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Qcw-pN-htu">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="dpe-g0-Tn0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="367"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="楼名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="12W-Na-qaa">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="楼层" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="DrX-kR-WP2">
+                                        <rect key="frame" x="0.0" y="77" width="320" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="节次" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="LVY-yF-qUf">
+                                        <rect key="frame" x="0.0" y="154" width="320" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fiC-sl-XQk">
+                                        <rect key="frame" x="10" y="110" width="121" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="第一层">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ClickButton:" destination="6xq-F2-TfG" eventType="touchUpInside" id="ZsW-ki-bCP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="adU-ph-x86">
+                                        <rect key="frame" x="10" y="316" width="300" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="确定">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="NextButton:" destination="6xq-F2-TfG" eventType="touchUpInside" id="05B-ww-gR7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5iM-Pj-bwN">
+                                        <rect key="frame" x="10" y="264" width="300" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="点击设置日期">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ClickButton:" destination="6xq-F2-TfG" eventType="touchUpInside" id="iOx-cO-JzT"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="到" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="BM9-65-F1d">
+                                        <rect key="frame" x="139" y="117" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="日期" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="1Vy-EF-MHd">
+                                        <rect key="frame" x="0.0" y="231" width="320" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="h8p-SF-GkQ">
+                                        <rect key="frame" x="189" y="110" width="121" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="第一层">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ClickButton:" destination="6xq-F2-TfG" eventType="touchUpInside" id="eMk-5e-PKU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="FL3-Rp-S43">
+                                        <rect key="frame" x="10" y="187" width="121" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="第一节">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ClickButton:" destination="6xq-F2-TfG" eventType="touchUpInside" id="V6V-Vk-Jyl"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tat-UU-eop">
+                                        <rect key="frame" x="189" y="187" width="121" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="第一节">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ClickButton:" destination="6xq-F2-TfG" eventType="touchUpInside" id="M3U-IJ-GUM"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="到" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="BYN-m9-xbe">
+                                        <rect key="frame" x="139" y="194" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3l1-J5-aPN">
+                                        <rect key="frame" x="0.0" y="25" width="320" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    </scrollView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="left" text="＊请选择楼名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" id="Sbd-C0-fjR">
+                                        <rect key="frame" x="223" y="2" width="87" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" red="0.64130261479591844" green="0.0" blue="0.0069587787371865554" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="无课表" id="Zg7-F3-qdo"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="无课表" id="s3X-cd-Lak">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="6lH-Oc-8f7"/>
+                        <barButtonItem key="rightBarButtonItem" tag="7" systemItem="search" id="zZq-ox-Tce">
+                            <connections>
+                                <action selector="ClickButton:" destination="6xq-F2-TfG" id="JdM-um-wDL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="DateButton" destination="5iM-Pj-bwN" id="EvK-wU-R2e"/>
+                        <outlet property="FromClassButton" destination="FL3-Rp-S43" id="i5I-8W-QYM"/>
+                        <outlet property="ToClassButton" destination="tat-UU-eop" id="maY-YV-peM"/>
+                        <outlet property="Wronglabel" destination="Sbd-C0-fjR" id="PqS-LL-TBK"/>
+                        <outlet property="myScrollView" destination="3l1-J5-aPN" id="x2b-wR-iIW"/>
+                        <outlet property="mySearchButton" destination="zZq-ox-Tce" id="HgQ-Wq-I35"/>
+                        <outlet property="myView" destination="dpe-g0-Tn0" id="SmT-mo-189"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1227" y="-184"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="UPw-qk-jhe">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hdE-of-uxC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController storyboardIdentifier="mainTabBar" definesPresentationContext="YES" id="jLC-RJ-dMt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="R4R-hT-zXq"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Idj-gp-0Kq">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="uSd-H4-ne6" kind="relationship" relationship="viewControllers" id="HCF-45-ydZ"/>
+                        <segue destination="mnf-gg-EV5" kind="relationship" relationship="viewControllers" id="V6m-vU-amh"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="270" y="64"/>
+        </scene>
+        <!--Navigation Controller - 无课表-->
+        <scene sceneID="oxG-o7-Fwk">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CgY-py-pvV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="uSd-H4-ne6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="1" title="无课表" id="BPH-mM-db9"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Sek-Fi-aEl" userLabel="Navigation Bar">
+                        <rect key="frame" x="0.0" y="-44" width="0.0" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="6xq-F2-TfG" kind="relationship" relationship="rootViewController" id="3cb-xP-Vl7"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="806" y="-184"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="ClassViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ClassViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="ChooseBuilding:"/>
+                <relationship kind="action" name="ClickButton:"/>
+                <relationship kind="action" name="NextButton:"/>
+                <relationship kind="outlet" name="ButtonSender" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="DateButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="FromClassButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="ToClassButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="Wronglabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="myScrollView" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="mySearchButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="myView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="LibraryViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LibraryViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="Scan:"/>
+                <relationship kind="action" name="backgroundTap:"/>
+                <relationship kind="action" name="swipeDetected:" candidateClass="UIGestureRecognizer"/>
+                <relationship kind="outlet" name="mySearchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="myView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
